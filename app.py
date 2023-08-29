@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -22,7 +22,7 @@ def math_operation():
     else:
         result = num1 - num2
 
-    return result
+    return jsonify(result)
 
 
 
