@@ -22,7 +22,7 @@ def math_operation():
     else:
         result = num1 - num2
 
-    return jsonify(result)
+    return f'The operation is {operation} and the num1 is {num1} and num2 is {num2} and the result {result}'
 
 
 
